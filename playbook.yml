@@ -94,7 +94,7 @@
       when: eb.stat.exists == false
 
     - name: Instalação do AWS EB CLI
-      command: "python /tmp/aws-eb/scripts/ebcli_installer.py" 
+      command: "python3 /tmp/aws-eb/scripts/ebcli_installer.py" 
       become: yes
       become_user: vagrant
       when: eb.stat.exists == false
